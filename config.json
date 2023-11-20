@@ -1,1 +1,6 @@
-
+{
+    "token": "Bot TOKEN",
+    "CLIENT_ID": "Bot Client ID",
+    "GUILD_ID": "Server ID",
+    "LOGS_CHANNEL": "Logs send channel id"
+}
