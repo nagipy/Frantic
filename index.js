@@ -11,6 +11,7 @@ const client = new Client({
   ]
 })
 
+// Code file loading.
 const logsPath = path.join(__dirname, "logs");
 const logsFiles = fs.reddirSync(logsPath).filter(file => file.endsWith(".js"));
 
@@ -20,6 +21,7 @@ for (const file of logsFiles) {
   client.on("ready", () => { log(client) });
 }
 
+// Bot status & ready message.
 client.on("ready", () => {
   client.user.setStatus("idle")
 
